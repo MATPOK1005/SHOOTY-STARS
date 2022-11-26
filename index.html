@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOOTY STARS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap" rel="stylesheet">   
+    <style>
+        #gameArea{
+            border: 5px solid grey;
+            box-shadow: pink 0px 0px 50px;
+        }
+
+        body{
+            background: rgb(4,32,128);
+            background: linear-gradient(50deg, rgba(4,32,128,1) 0%, rgba(85,9,121,1) 29%, rgba(108,129,44,1) 69%, rgba(5,114,136,1) 100%);
+            text-align: center;
+            height: 100vh;
+            /*overflow: hidden;*/
+        }
+
+        h1, h2, h4{
+            font-family: 'Anek Telugu', sans-serif;
+        }
+
+        #score, #highscore{
+            color: lime;
+            font-family: 'Anek Telugu', sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>SHOOTY STARS</h1>
+    <p id="f5">Press F5 to restart<br>wasd or arrows to move<br>space to dodge</p>
+    <canvas id="gameArea" height="800" width="800"></canvas>
+    <h2>SCORE</h2>
+    <p id="score"></p>
+    <h4>HIGHSCORE</h4>
+    <p id="highscore"></p>
+    <script src="index.js"></script>
+</body>
+</html>
